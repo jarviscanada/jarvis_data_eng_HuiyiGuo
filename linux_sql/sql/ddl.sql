@@ -21,6 +21,6 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_usage(
      cpu_idle       INT NOT NULL,
      cpu_kernel     INT NOT NULL,
      disk_io        INT NOT NULL,
-     dis_available  INT NOT NULL,
+     disk_available  INT NOT NULL,
      FOREIGN KEY (host_id) REFERENCES host_info (id)
 );
