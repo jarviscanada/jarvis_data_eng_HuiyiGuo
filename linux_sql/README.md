@@ -52,3 +52,39 @@ bash> crontab -e
 
 
 ## Implemenation
+
+### Architecture
+### Scripts
+### Database Modeling
+In this project, there are two tables to persist hardware specifications data and resource usage data into the psql instance to perform data analytics.
+* `host_info`
+
+Fields | Type | Constraint | Description
+-------|------|------------|-------------
+id     | SERIAL | PRIMARY KEY | This unique identifier is automatically generate when inserted into the database.
+hostname       | VARCHAR | NOT NULL | Name of the Linux server
+cpu_number     | INT | NOT NULL | Number of CPUs in the server
+cpu_architecture | VARCHAR | NOT NULL | Architecture of the CPU in the server
+cpu_model        | VARCHAR | NOT NULL | Model of the CPU in the server
+cpu_mhz          | FLOAT(3) | NOT NULL | Processor speed of the CPU in the server
+L2_cache         | INT | NOT NULL | Size of the L2 cache in the CPU in the server
+total_mem        | INT | NOT NULL | Total memory installed in the server
+timestamp        | TIMESTAMP | NOT NULL | Time of host_info script execution
+
+* `host_usage`
+
+Fields | Type | Constraint | Description
+-------|------|------------|-------------
+timestamp    |  TIMESTAMP | NOT NULL | Time of host_usage script execution
+host_id      |  SERIAL | FOREIGN KEY, REFERENCES host_info (id) | ID of the host in host_info table 
+memory_free  |  INT | NOT NULL | Amount of the free memory 
+cpu_idle     |  INT | NOT NULL | Percentage of the CPU that is not being used
+cpu_kernel   |  INT | NOT NULL | Percentage of CPU is used by the kernel
+disk_io      |  INT | NOT NULL | Number of disk I/O
+disk_available | INT | NOT NULL | Available disk space in the root directory 
+
+## Test
+
+## Deployment
+
+## Improvements
