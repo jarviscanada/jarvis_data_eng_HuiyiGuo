@@ -22,5 +22,33 @@ The technologies used:
 
 ## Quick Start
 * Start a psql instance using `psql_docker.sh`
+```bash
+# create a psql docker container with the given username and password.
+./scripts/psql_docker.sh start|stop|create [db_username][db_password]
+```
+
+* Create tables using `ddl.sql`
+```bash
+# Execute ddl.sql script on the host_agent database againse the psql instance
+psql -h localhost -U postgres -d host_agent -f sql/ddl.sql
+```
+
+* Insert hardware specs data into the DB using `host_info.sh`
+```bash
+./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password
+```
+
+* Insert hardware usage data into the DB using `host_usage.sh`
+```bash
+./scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password
+```
+
+* Crontab setup
+```bash
+bash> crontab -e
+#add this to crontab
+* * * * * bash /absolute_path_of_script/host_usage.sh localhost 5432 host_agent postgres password > /tmp/host_usage.log
+```
+
 
 ## Implemenation
