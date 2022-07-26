@@ -123,7 +123,14 @@ disk_io      |  INT | NOT NULL | Number of disk I/O
 disk_available | INT | NOT NULL | Available disk space in the root directory 
 
 ## Test
+All scripts were developed and tested on the Jarvis Remote Desktop instance which runs on a Google Cloud platform instance(Centos 7). Bash scripts were tested manually by executing with correct, incorrect, and insufficient CLI arguments. SQL queries were tested by manually inserting mock data inputs, filtering the outcomes, and comparing them to what was anticipated (since we only have one single machine, not a Linux cluster). All scripts functioned as expected.
 
 ## Deployment
+All scripts were deployed to GitHub repositories using the Jarvis Remote Desktop.
+Crontab was used to routinely automate server usage data entries.
+Docker is used to provision the database, and sql queries are executed through postgres.
 
 ## Improvements
+* Show the Memory or CPU as WARNING/CRITICAL state when there is not enough memory or CPU
+* Handle hardware update; the current host_info script assumes the hardware specifications are static
+* Add more SQL queries to collect other useful information (e.g. Network Monitorin)
