@@ -20,8 +20,7 @@ The technologies used:
 * Google Cloud Platform (GCP) (provided the instance to run the JRD)
 
 
-
 ## Quick Start
-
+* Start a psql instance using `psql_docker.sh`
 
 ## Implemenation
