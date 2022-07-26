@@ -55,7 +55,7 @@ bash> crontab -e
 The project was implemented using Linux command lines, Bash scripts, PostgreSQL, docker, IntelliJ IDEA, crontab, RDBSM database, and SQL queries
 
 ### Architecture
-![architecture cluster diagram](./assets/architecture_cluster_diagram.png)
+![architecture cluster diagram](./assets/architecture_cluster_diagram.JPG)
 
 ### Scripts
 ### Database Modeling
