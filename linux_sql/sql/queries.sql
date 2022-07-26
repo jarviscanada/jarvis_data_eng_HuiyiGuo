@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 SELECT cpu_number,id,total_mem
+=======
+ELECT cpu_number,id,total_mem
+>>>>>>> feature/psql_docker
 FROM host_info
 GROUP BY cpu_number, total_mem
 ORDER BY cpu_number, total_mem DESC;
