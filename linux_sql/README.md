@@ -58,6 +58,42 @@ The project was implemented using Linux command lines, Bash scripts, PostgreSQL,
 ![architecture cluster diagram](./assets/architecture_cluster_diagram.JPG)
 
 ### Scripts
+- ```psql_docker.sh```  -- create, start, or stop a PSQL container
+```bash
+# create a psql docker container running the Postgres database if it already doesn't exist with a given username and password. It is also used to start and stop the docker container.
+./scripts/psql_docker.sh create db_username db_password
+./scripts/psql_docker.sh start
+./scripts/psql_docker.sh stop
+```
+
+- ```host_info.sh``` -- collects hardware specification data (assumed to be static, including the hostname, CPU information, and memory information); this script will be executed only once at installation time and this script should run before the host_usage.sh script to ensure the database is set up correctly.
+```bash
+# This command will insert the hardware specifications data into the Postgres database
+./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password
+```
+where psql_host is the Postgres host running the database, psq_port is the port the Postgres server that is listening on, db_name is the database name (host_agent is the default), psql_user is the Postgres username used when creating the database, and psql_password is the Postgres password used when creating the database.
+
+- ```host_usage.sh``` -- collects server usage data (runs every minute, including memory information, CPU information, and disk usage)
+```bash
+./scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password
+```
+where psql_host is the Postgres host running the database, psql_port is the port the Postgres server is that listening on, db_name is the database name (host_agent is the default), psql_user is the Postgres username used when creating the database, and psql_password is the Postgres password used when creating the database.
+
+- crontab  -- execute ```host_usage.sh``` every minute
+```bash
+# edit crontab file
+crontab -e
+# add command to crontab file
+* * * * * bash /absolute_path_of_script/host_usage.sh psql_host psql_port db_name psql_user psql_password > /tmp/host_usage.log
+```
+where psql_host is the Postgres host running the database(localhost is the default), psql_port is the port the Postgres server is that listening on (5432 is the default), db_name is the database name (host_agent is the default), psql_user is the Postgres username used when creating the database(postgres is the default), and psql_password is the Postgres password used when creating the database(password is the default).
+
+- ```queries.sql``` is used to solve some business objectives:
+  - Group hosts together by CPU number and sort them by memory size
+  - Average used memory over 5 minute intervals and displayed as a percentage for each host
+  - Detect host failures by checking if the cron job inserts at least 3 data points within a 5-minute interval
+
+
 ### Database Modeling
 In this project, there are two tables to persist hardware specifications data and resource usage data into the psql instance to perform data analytics.
 * `host_info`
