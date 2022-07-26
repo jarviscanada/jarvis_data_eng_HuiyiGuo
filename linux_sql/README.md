@@ -4,7 +4,7 @@
 The Linux Cluster Monitoring Agent is a minimum viable product (MVP) that provides metrics that can be used to get information about system activities. 
 It can be used by the LCA team to meet their business needs (e.g. collect hardware specification data, resource usage data, find the possible causes of a performance problem, etc.)
 This project includes 3 bash scripts. One of those is used to create, stop, and start the PSQL Docker instance. The other two are used to gather data. Collected data will automatically insert into a RDBSM database.
-Additionally, this project has some sql scripts that let the LCA team do various administrative queries to more effectively track cluster consumption. 
+Additionally, this project has 2 sql scripts that let the LCA team do various administrative queries to more effectively track cluster consumption. 
 These queries give the user the ability to categorize hosts based on hardware information, the average memory usage over a 5-minute period for each host, and check for host failures using the crontab process.
 
 The technologies used:
@@ -52,8 +52,11 @@ bash> crontab -e
 
 
 ## Implemenation
+The project was implemented using Linux command lines, Bash scripts, PostgreSQL, docker, IntelliJ IDEA, crontab, RDBSM database, and SQL queries
 
 ### Architecture
+![architecture cluster diagram](./assets/architecture_cluster_diagram.png)
+
 ### Scripts
 ### Database Modeling
 In this project, there are two tables to persist hardware specifications data and resource usage data into the psql instance to perform data analytics.
