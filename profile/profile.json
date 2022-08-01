@@ -1,0 +1,88 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "GPA: 3.44/4.0"
+      ],
+      "degree": "Bachelor of Sciences",
+      "department": "Statistics and Computer Science",
+      "duration": "2018-2022",
+      "school_name": "McGill University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo",
+  "highlighted_projects": [
+    {
+      "description": "Developed an artificial intelligence agent using python that can play against a random agent in Colosseum Survival Game. The agent should maximize its final score of itself. Users will be able to see agents¡¯ moves on an NxN game board. The Monte Carlo Tree Search method is used to decide the best next move.",
+      "name": "AI agent in game"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "This project is about developing a Linux Cluster Monitoring Agent that provides metrics that can be used to get information about system activities. This project includes 3 bash scripts. One of those is used to create, stop, and start the PSQL Docker instance. The other two are used to gather data. Data is automatically collected from the host system using PostgreSQL every minute and saved in a Relational Database Management System database using crontab. Additionally, this project has 2 SQL scripts that allow users to more effectively track cluster consumption.",
+      "git_url": "//github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/linux_sql",
+      "name": "Cluster Monitor"
+    }
+  ],
+  "name": "Huiyi Guo",
+  "others": [
+    {
+      "bullets": [
+        "Reading",
+        "Casual Gamer",
+        "Badminton Player"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "As a software developer, I was responsible for building multiple projects (see Jarvis projects above). I gained more expertise in scripting, Java, Object Oriented Programming, and SQL by using multiple technologies, including Linux, Docker, PostgreSQL, Bash, Git, Crontab, etc. I worked in an agile environment, both participating in and leading daily scrum meetings. Also, I used Github to organize and manage project structures and to ensure the delivery of stable and clean code.",
+      "duration": "2022-present",
+      "title": "Software Developer"
+    },
+    {
+      "company": "Tower research capital",
+      "description": "I designed, coded, and debugged a daily analysis program that analyzed the previous trading day¡¯s transaction data using python. I produced supporting reports and documentation to help senior team members complete their projects. I collaborated with the trading team to ensure the analysis results were clean and functional.",
+      "duration": "2021 Summer",
+      "title": "Software Development Engineer Intern"
+    },
+    {
+      "company": "United Overseas Bank",
+      "description": "I was responsible for analyzing data from various sources and compiling it into daily routine reports. I produce relevant presentations for other teams. I often received positive feedback from my supervisors and other team members regarding my presentation quality and useful information.",
+      "duration": "2019 Summer",
+      "title": "Trading Analyst Intern"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "C",
+      "R",
+      "MATLAB",
+      "Docker",
+      "Algorithms",
+      "Data Structures",
+      "Artificial Intelligence",
+      "Applied Machine Learning",
+      "Natural Language Processing"
+    ],
+    "familiar": [
+      "Public Cloud(GCP)",
+      "Javascript",
+      "MIPS assembly",
+      "Ocaml",
+      "Cryptography"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git",
+      "Python",
+      "Microsoft Office Suite(Word,Excel,Powerpoint)"
+    ]
+  },
+  "summary": "I am a recent graduate of McGill University with a Bachelor's degree in Statistics and Computer Science. Through my previous internship experiences and the knowledge I learn from university, I gained solid coding (Java, Python, C, SQL, etc.), problem solving and collaboration skills that I can apply to this role. During my studies, backend and full-stack development captured my heart as I can turn my creative idea into an application that solves real-world problems. I enjoy learning new techniques and continuously improving them. I'm now sharpening my abilities with tools and technologies that are commonly used in the business and gaining experience writing expert code to address real-world issues at Jarvis Consulting Group."
+}
