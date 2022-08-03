@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Linux Cluster Monitoring Agent
 
 ## Introduction
@@ -135,6 +135,4 @@ Docker is used to provision the database, and sql queries are executed through p
 * Show the Memory or CPU as WARNING/CRITICAL state when there is not enough memory or CPU
 * Handle hardware update; the current host_info script assumes the hardware specifications are static
 * Add more SQL queries to collect other useful information (e.g. Network Monitorin)
-=======
 
->>>>>>> master
