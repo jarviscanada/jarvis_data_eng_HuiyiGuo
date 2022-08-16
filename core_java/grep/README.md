@@ -8,8 +8,17 @@
 
 ## Implemenation
 ### Pseudocode
+The void process() method, which is the heart of this application, calls numerous helper functions as seen in the following pseudocode:
+```
+for file in listFilesRecursively(rootDirPath)
+  for line in readLines(file)
+      if containsPattern(line)
+        matchedLines.add(line)
+writeToFile(matchedLines)
+```
 
 ### Performance Issue
+
 
 ## Test
 
