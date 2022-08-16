@@ -1,5 +1,5 @@
 # Introduction
-
+This project employs JDBC that allows a connection between a Java application and an RDBMS database (Postgres is used in this project). The Postgres database is running on a Docker container using a Postgres image. The Maven Standard Directory Layout is also used in this project. Additionally, this project uses DBeaver to generate an ER diagram. JDBC is used to allow the user to run queries and carry out CRUD operations on the database. Customer, order, salesperson, and product information are all included in the database's basic sales data.
 
 Technology used:
 * Java 8
