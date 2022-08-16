@@ -109,7 +109,16 @@ public class JavaGrepImp implements JavaGrep{
                 }
             }
         }
-        writeToFile(lines);
+        if (lines.size() > 0){
+            try{
+                this.writeToFile(lines);
+            }catch (Exception e){
+                throw new IOException("Unable to write fi");
+            }
+        }else{
+            logger.error("No matched line");
+        }
+
     }
 
     @Override
