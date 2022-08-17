@@ -51,8 +51,9 @@ Using the -Xmx option to increase the maximum heap size is also an option to sol
 A single file containing the entire text of William Shakespeare's play was used to test the application. The test data was manually entered using various combinations of root directory paths, out filenames, and regex string patterns on the command line. The Linux grep command is then used to compare the output file to the output.
 
 ## Deployment
-
-
+This app was dockerized for easier distribution.
+The Maven build manager was used to initially package the Java Grep Application into a jar file. And then a docker image was built by implementing a DockerFile. 
+Finally, the docker image was uploaded to the Docker hub for easier access.
 
 ## Improvement
 * Provide additional options that are built in the grep command, such as -n to display the line number, -i for case insensitive matching
