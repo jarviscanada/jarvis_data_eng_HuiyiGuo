@@ -1,7 +1,7 @@
 # Core_java grep
 
 ## Introduction
-The Java Grep Application is an application that mimics the Linux grep command. This application takes in three inputs and outputs the line that matches a text pattern found in a directory to a file. Two distinct implementations of reading and writing files are included in this application, one utilizing Lambda and Stream APIs and the other using BuffererReader and FileOutputStream. For this project, Maven was used to manage the build lifecycle and download dependencies. Docker was then used to deploy the grep app, making it easy to distribute and use.
+The Java Grep Application is an application that mimics the Linux grep command. This application takes in three inputs and outputs the line that matches a text pattern found in directories to a file. Two distinct implementations of reading and writing files are included in this application, one utilizing Lambda and Stream APIs and the other using BuffererReader and FileOutputStream. For this project, Maven was used to manage the build lifecycle and download dependencies. Docker was then used to deploy the grep app, making it easy to distribute and use.
 
 ## Quick Start
 The application takes three arguments:
