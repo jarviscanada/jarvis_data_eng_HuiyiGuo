@@ -14,15 +14,10 @@ import java.util.Arrays;
 
 public class TwitterApiTest {
 
-    private static String CONSUMER_KEY = "sy3DVFML7wAzOzCVj0bh6DG5w";
-            //System.getenv( "consumerKey");
-    private static String CONSUMER_SECRET = "6IrhjDyojKnpUKeSGPw7fxm8WcqkOMW5SM1pkt4clbphVmwTQ7";
-                    //System.getenv("consumerSecret");
-    private static String ACCESS_TOKEN = "796582358023475200-LRZMG6jpPXXNAJPDFJwEmyVDVU3p4nL";
-                            //System.getenv("accessToken");
-    private static String TOKEN_SECRET = "An3evEuzmWH6g88iWRgLjYQxvQsoSlDV34qRHpuyT3rAH";
-
-                                    //System.getenv("tokenSecret");
+    private static String CONSUMER_KEY = System.getenv( "consumerKey");
+    private static String CONSUMER_SECRET = System.getenv("consumerSecret");
+    private static String ACCESS_TOKEN = System.getenv("accessToken");
+    private static String TOKEN_SECRET = System.getenv("tokenSecret");
 
     public static void main(String[] args) throws Exception {
 
