@@ -1,17 +1,17 @@
 class Solution {
     public String letter_with_number(String str) {
-      String result = "";
-      for (int i = 0; i < str.length(); i++){
-        char ch = str.charAt(i);
-        result += ch;
-        if (ch.isUpperCase()){
-          int upper = ch - 'A' + 1;
-          result += upper;
-        }else{
-          int lower = ch - 'a' + 1;
-          result += lower;
-        }
-      }
-      return result;
-    }
+	      String result = "";
+	      for (int i = 0; i < str.length(); i++){
+	        char ch = str.charAt(i);
+	        result += ch;
+	        if (Character.isUpperCase(ch)){
+	          int upper = ch - 'A' + 1;
+	          result += upper;
+	        }else{
+	          int lower = ch - 'a' + 1;
+	          result += lower;
+	        }
+	      }
+	      return result;
+	    }
 }
