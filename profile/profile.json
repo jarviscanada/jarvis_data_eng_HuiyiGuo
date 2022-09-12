@@ -11,20 +11,20 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo",
   "highlighted_projects": [
     {
-      "description": "Developed an artificial intelligence agent using python that can play against a random agent in Colosseum Survival Game. The agent should maximize its final score of itself. Users will be able to see agents moves on an NxN game board. The Monte Carlo Tree Search method is used to decide the best next move.",
+      "description": "Developed an artificial intelligence agent using python that can play against a random agent in Colosseum Survival Game. The agent should maximize its own final score. Users will be able to see agents moves on an NxN game board. The Monte Carlo Tree Search method is used to decide the best next move.",
       "name": "AI agent in game"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "This project is about developing a Linux Cluster Monitoring Agent that provides metrics that can be used to get information about system activities. This project includes 3 bash scripts. One of those is used to create, stop, and start the PSQL Docker instance. The other two are used to gather data. Data is automatically collected from the host system using PostgreSQL every minute and saved in a Relational Database Management System database using crontab. Additionally, this project has 2 SQL scripts that allow users to more effectively track cluster consumption.",
+      "description": "This project is about developing a Linux Cluster Monitoring Agent that provides metrics about system activities. Bash script is created and is used to create, stop, and start the PSQL Docker instance. Also, two other bash scripts are used to gather data. Data is automatically collected from the host system using crontab every minute and saved to PostgresSQL.",
       "git_url": "//github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/linux_sql",
       "name": "Cluster Monitor"
     },
     {
       "description": [
-        "JDBC App: This project implemented a Java Database Connectivity (JDBC) application using the JDBC API to connect to a database and run queries to obtain the data. The user can use the application to perform predefined actions on the database, such as CRUD (Create, Read, Update, Delete) operations. Java, JDBC, Maven, Postgres database, and Docker were all used when building this application.",
-        "Grep App: This application is a java-based application that mimics the Linux command line grep function. This application searches files recursively in a given directory and outputs the matched text pattern using regex to a file. The project was completed using Maven Standard Directory Layout following the industry standard. Additionally, Lambda API and Stream API are used and are managed by IntelliJ Ultimate IDE. The grep application is then dockerized and uploaded to DockerHub as a Docker Image."
+        "JDBC App: This project implemented a Java Database Connectivity (JDBC) application using the JDBC API to connect to a database and run queries to obtain the data. The user can use the application to perform predefined actions on the database, such as CRUD operations. Java, JDBC, Maven, Postgres database, and Docker were all used when building this application.",
+        "Grep App: This application is a Java-based application that mimics the Linux command line grep function. This application searches files recursively in a given directory and outputs the matched text pattern using regex to a file. The project was completed using Maven Standard Directory Layout following industry standard. Additionally, Lambda API and Stream API are used for managing larger inputs. The grep application was then dockerized and uploaded to DockerHub as a Docker Image."
       ],
       "git_url": "https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/core_java",
       "name": "Core Java Apps"
@@ -49,14 +49,14 @@
       "title": "Software Developer"
     },
     {
-      "company": "Tower research capital",
-      "description": "I designed, coded, and debugged a daily analysis program that analyzed the previous trading day transaction data using python. I produced supporting reports and documentation to help senior team members complete their projects. I collaborated with the trading team to ensure the analysis results were clean and functional.",
+      "company": "Tower Research Capital",
+      "description": "I designed, coded, and debugged a daily analysis program that analyzed the previous trading day transaction data using Python. I produced supporting reports and documentation to help senior team members complete their projects. I collaborated with the trading team to ensure the analysis results were clean and functional.",
       "duration": "2021 Summer",
       "title": "Software Development Engineer Intern"
     },
     {
       "company": "United Overseas Bank",
-      "description": "I was responsible for analyzing data from various sources and compiling it into daily routine reports. I produce relevant presentations for other teams. I often received positive feedback from my supervisors and other team members regarding my presentation quality and useful information.",
+      "description": "I was responsible for analyzing data from various sources and compiling it into daily routine reports. I produced relevant presentations for other teams. I often received positive feedback from my supervisors and team members regarding my presentation quality and practical information.",
       "duration": "2019 Summer",
       "title": "Trading Analyst Intern"
     }
@@ -87,8 +87,8 @@
       "Agile/Scrum",
       "Git",
       "Python",
-      "Microsoft Office Suite(Word,Excel,Powerpoint)"
+      "Microsoft 365"
     ]
   },
-  "summary": "I am a recent graduate of McGill University with a Bachelor's degree in Statistics and Computer Science. Through my previous internship experiences and the knowledge I learn from university, I gained solid coding (Java, Python, C, SQL, etc.), problem solving and collaboration skills that I can apply to this role. During my studies, backend and full-stack development captured my heart as I can turn my creative idea into an application that solves real-world problems. I enjoy learning new techniques and continuously improving them. I'm now sharpening my abilities with tools and technologies that are commonly used in the business and gaining experience of writing expert code to address real-world issues at Jarvis Consulting Group."
+  "summary": "I am a recent graduate of McGill University with a Bachelor's degree in Statistics and Computer Science. Through my previous internship experiences and the education I gained from university, I gained solid coding skills with Java, Python, C, SQL, etc., as well as problem solving and collaboration skills that I can carry to future role. During my studies, backend and full-stack development captured my heart as I can turn my creative ideas into applications that solves real-world problems. I enjoy learning new techniques and continuously improving them. I'm now sharpening my abilities with tools and technologies that are commonly used in the business and implementing my skills at Jarvis Consulting Group."
 }
