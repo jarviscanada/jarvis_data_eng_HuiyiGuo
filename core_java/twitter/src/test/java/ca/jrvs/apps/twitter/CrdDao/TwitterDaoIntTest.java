@@ -8,7 +8,7 @@ import ca.jrvs.apps.twitter.model.Tweet;
 
 import static org.junit.Assert.*;
 
-import net.minidev.json.JSONUtil;
+import ca.jrvs.apps.twitter.util.TweetUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.LoggerFactory;
@@ -17,8 +17,8 @@ import java.util.Arrays;
 
 public class TwitterDaoIntTest {
     private TwitterDao dao;
-    Integer lat = 1;
-    Integer lon = -1;
+    Double lat = 1d;
+    Double lon = -1d;
     String hashTag = "#create_test";
     String text = "sometext_test" + hashTag + " " + System.currentTimeMillis();
 
@@ -39,22 +39,17 @@ public class TwitterDaoIntTest {
 
     @Test
     public void create() throws Exception{
-        Coordinates coordinates = new Coordinates();
-        Tweet tweet = new Tweet();
+        Tweet postTweet;
 
         try {
-            coordinates.setCoordinates(Arrays.asList(lon, lat));
-            coordinates.setType("Point");
-            tweet.setText(text);
-            tweet.setCoordinates(coordinates);
-            //Tweet postTweet = TweetUtil.buildTweet(text,lon,lat);
+            postTweet = TweetUtil.buildTweet(text,lon,lat);
         }catch (Exception e){
             throw new Exception("Unable to create tweet with coordinate", e);
         }
-        System.out.println(tweet.toString());
+
         //System.out.println(JsonUtil.toPrettyJson(postTweet));
 
-        Tweet createTweet = dao.create(tweet);
+        Tweet tweet = dao.create(postTweet);
 
         assertEquals(text, tweet.getText());
 
@@ -87,18 +82,14 @@ public class TwitterDaoIntTest {
 
     @Test
     public void deleteById() throws Exception {
-        Coordinates coordinates = new Coordinates();
-        Tweet tweet = new Tweet();
+
+        Tweet tweet;
 
         try {
-            coordinates.setCoordinates(Arrays.asList(lon, lat));
-            coordinates.setType("Point");
-            tweet.setText(text);
-            tweet.setCoordinates(coordinates);
+            tweet = TweetUtil.buildTweet(text,lon,lat);
         }catch (Exception e){
             throw new Exception("Unable to create tweet with coordinate in del part", e);
         }
-        System.out.println(tweet.toString());
 
         Tweet createTweet = dao.create(tweet);
 
