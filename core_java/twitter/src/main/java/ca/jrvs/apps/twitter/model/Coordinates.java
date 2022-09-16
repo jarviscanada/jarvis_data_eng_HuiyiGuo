@@ -15,7 +15,7 @@ public class Coordinates {
     @JsonProperty("type")
     private String type;
     @JsonProperty("coordinates")
-    private List<Integer> coordinates;
+    private List<Double> coordinates;
 
     @JsonProperty("text")
     public String text;
@@ -28,11 +28,11 @@ public class Coordinates {
         this.type = type;
     }
     @JsonGetter
-    public List<Integer> getCoordinates() {
+    public List<Double> getCoordinates() {
         return coordinates;
     }
     @JsonSetter
-    public void setCoordinates(List<Integer> coordinates) {
+    public void setCoordinates(List<Double> coordinates) {
         this.coordinates = coordinates;
     }
 }

@@ -23,12 +23,12 @@ public class TwitterService implements Service {
         //twitter sring <= 140
         //geocordinate max 90, min -90
         final Integer maxStringLength = 140;
-        final Integer maxGeoCoordinate = 90;
-        final Integer minGeoCoordinate = -90;
+        final Double maxGeoCoordinate = 90d;
+        final Double minGeoCoordinate = -90d;
 
         String textBody = tweet.getText();
-        Integer longitude = tweet.getCoordinates().getCoordinates().get(0);
-        Integer latitude = tweet.getCoordinates().getCoordinates().get(1);
+        Double longitude = tweet.getCoordinates().getCoordinates().get(0);
+        Double latitude = tweet.getCoordinates().getCoordinates().get(1);
 
         if(textBody.length() > maxStringLength){
             throw new IllegalArgumentException("Tweet text need to be less than 140 characters");
