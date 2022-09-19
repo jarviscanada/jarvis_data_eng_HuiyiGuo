@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: ca.jrvs.apps.twitter.Service.TwitterServiceUnitTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.302 s <<< FAILURE! - in ca.jrvs.apps.twitter.Service.TwitterServiceUnitTest
+showTweet(ca.jrvs.apps.twitter.Service.TwitterServiceUnitTest)  Time elapsed: 0.227 s  <<< ERROR!
+java.lang.NullPointerException
+	at ca.jrvs.apps.twitter.Service.TwitterServiceUnitTest.showTweet(TwitterServiceUnitTest.java:54)
+
+deleteTweet(ca.jrvs.apps.twitter.Service.TwitterServiceUnitTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at ca.jrvs.apps.twitter.Service.TwitterServiceUnitTest.deleteTweet(TwitterServiceUnitTest.java:64)
+
+postTweet(ca.jrvs.apps.twitter.Service.TwitterServiceUnitTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at ca.jrvs.apps.twitter.Service.TwitterServiceUnitTest.postTweet(TwitterServiceUnitTest.java:29)
+

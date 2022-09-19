@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: ca.jrvs.apps.twitter.Service.TwitterServiceIntTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.097 s <<< FAILURE! - in ca.jrvs.apps.twitter.Service.TwitterServiceIntTest
+showTweet(ca.jrvs.apps.twitter.Service.TwitterServiceIntTest)  Time elapsed: 0.084 s  <<< ERROR!
+java.lang.IllegalArgumentException: id contains only numbers
+	at ca.jrvs.apps.twitter.Service.TwitterServiceIntTest.showTweet(TwitterServiceIntTest.java:64)
+
+deleteTweets(ca.jrvs.apps.twitter.Service.TwitterServiceIntTest)  Time elapsed: 0.012 s  <<< ERROR!
+java.lang.RuntimeException: Failed to execute
+	at ca.jrvs.apps.twitter.Service.TwitterServiceIntTest.deleteTweets(TwitterServiceIntTest.java:77)
+Caused by: oauth.signpost.exception.OAuthExpectationFailedException: consumer key not set
+	at ca.jrvs.apps.twitter.Service.TwitterServiceIntTest.deleteTweets(TwitterServiceIntTest.java:77)
+
+postTweet(ca.jrvs.apps.twitter.Service.TwitterServiceIntTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: Failed to execute
+	at ca.jrvs.apps.twitter.Service.TwitterServiceIntTest.postTweet(TwitterServiceIntTest.java:38)
+Caused by: oauth.signpost.exception.OAuthExpectationFailedException: consumer key not set
+	at ca.jrvs.apps.twitter.Service.TwitterServiceIntTest.postTweet(TwitterServiceIntTest.java:38)
+

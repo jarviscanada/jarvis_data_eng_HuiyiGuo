@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: ca.jrvs.apps.twitter.Controller.TwitterControllerIntTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! - in ca.jrvs.apps.twitter.Controller.TwitterControllerIntTest
+showTweet(ca.jrvs.apps.twitter.Controller.TwitterControllerIntTest)  Time elapsed: 0.012 s  <<< ERROR!
+java.lang.IllegalArgumentException: id contains only numbers
+	at ca.jrvs.apps.twitter.Controller.TwitterControllerIntTest.showTweet(TwitterControllerIntTest.java:50)
+
+deleteTweet(ca.jrvs.apps.twitter.Controller.TwitterControllerIntTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: id contains only numbers
+	at ca.jrvs.apps.twitter.Controller.TwitterControllerIntTest.deleteTweet(TwitterControllerIntTest.java:61)
+
+postTweet(ca.jrvs.apps.twitter.Controller.TwitterControllerIntTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: Failed to execute
+	at ca.jrvs.apps.twitter.Controller.TwitterControllerIntTest.postTweet(TwitterControllerIntTest.java:39)
+Caused by: oauth.signpost.exception.OAuthExpectationFailedException: consumer key not set
+	at ca.jrvs.apps.twitter.Controller.TwitterControllerIntTest.postTweet(TwitterControllerIntTest.java:39)
+

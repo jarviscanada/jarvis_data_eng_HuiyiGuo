@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: ca.jrvs.apps.twitter.HttpHelper.TwitterHttpHelperTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in ca.jrvs.apps.twitter.HttpHelper.TwitterHttpHelperTest
+testHttpPost(ca.jrvs.apps.twitter.HttpHelper.TwitterHttpHelperTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: Failed to execute
+	at ca.jrvs.apps.twitter.HttpHelper.TwitterHttpHelperTest.testHttpPost(TwitterHttpHelperTest.java:22)
+Caused by: oauth.signpost.exception.OAuthExpectationFailedException: consumer key not set
+	at ca.jrvs.apps.twitter.HttpHelper.TwitterHttpHelperTest.testHttpPost(TwitterHttpHelperTest.java:22)
+
