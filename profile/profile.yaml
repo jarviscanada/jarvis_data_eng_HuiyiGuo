@@ -5,7 +5,7 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: I am a recent graduate of McGill University with a Bachelor's degree in Statistics and Computer Science. Through my previous internship experiences and the education I gained from university, I gained solid coding skills with Java, Python, C, SQL, etc., as well as problem solving and collaboration skills that I can carry to future role. During my studies, backend and full-stack development captured my heart as I can turn my creative ideas into applications that solves real-world problems. I enjoy learning new techniques and continuously improving them. I'm now sharpening my abilities with tools and technologies that are commonly used in the business and implementing my skills at Jarvis Consulting Group.
+summary: I am a recent graduate of McGill University with a Bachelor's degree in Statistics and Computer Science. Through my previous internship experiences and the education I gained from university, I gained solid coding skills with Python, Java, JavaScript, SQL, and C as well as problem solving and collaboration skills that I can carry to future roles. During my studies, backend and full-stack development captured my heart as I can turn my creative ideas into applications that solve real-world problems. I enjoy learning new techniques and continuously improving them. I'm now sharpening my abilities with tools and technologies that are commonly used in the business and implementing my skills at Jarvis Consulting Group.
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -13,30 +13,28 @@ skills:
   # At least 5 skills
   proficient:
     - Java
-    - Linux/Bash
+    - JavaScript
+    - Python
     - RDBMS/SQL
     - Agile/Scrum
     - Git
-    - Python
-    - Microsoft 365
+    - Linux/Bash
   # At least 5 skills
   competent:
     - C
     - R
     - MATLAB
     - Docker
-    - Algorithms
-    - Data Structures
-    - Artificial Intelligence
     - Applied Machine Learning
     - Natural Language Processing
+    - Microsoft 365
   # At least 5 skills
   familiar:
     - Public Cloud(GCP)
-    - Javascript
+    - JUnit
     - MIPS assembly
     - Ocaml
-    - Cryptography
+    - Spring framework/Spring boot
 
 # List of Jarvis projects
 jarvis_projects:
@@ -44,14 +42,14 @@ jarvis_projects:
     git_url: "//github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: This project is about developing a Linux Cluster Monitoring Agent that provides metrics about system activities. Bash script is created and is used to create, stop, and start the PSQL Docker instance. Also, two other bash scripts are used to gather data. Data is automatically collected from the host system using crontab every minute and saved to PostgresSQL. 
+    description: This project is about developing a Linux Cluster Monitoring Agent that provides metrics about system activities. Bash scripts are used to collect data from the host system every minute using cron and saved to PostgresSQL server that runs inside a docker container. 
 
   - name: "Core Java Apps"
     git_url: "https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/core_java"
     description:
   #    - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "JDBC App: This project implemented a Java Database Connectivity (JDBC) application using the JDBC API to connect to a database and run queries to obtain the data. The user can use the application to perform predefined actions on the database, such as CRUD operations. Java, JDBC, Maven, Postgres database, and Docker were all used when building this application."
-      - "Grep App: This application is a Java-based application that mimics the Linux command line grep function. This application searches files recursively in a given directory and outputs the matched text pattern using regex to a file. The project was completed using Maven Standard Directory Layout following industry standard. Additionally, Lambda API and Stream API are used for managing larger inputs. The grep application was then dockerized and uploaded to DockerHub as a Docker Image."
+      - "JDBC App: This project implemented a Java Database Connectivity (JDBC) application using the JDBC API to connect to a database and run queries to obtain the data. The user can use the application to perform predefined actions on the database, such as CRUD operations. Java, JDBC, Maven, Postgres, and Docker were all used when building this application."
+      - "Grep App: This application is a Java-based application that mimics the Linux command line grep function. This application searches files recursively in a given directory and outputs the matched text pattern using regex to a file. The project was completed using Maven Standard Directory Layout following industry standards. Additionally, Lambda API and Stream API are used for managing larger inputs. The grep application was then dockerized and uploaded to DockerHub as a Docker Image."
   #- name: "Springboot App"
   #  git_url: "/springboot"
   #  description: ""
@@ -76,7 +74,7 @@ highlighted_projects:
     #URL is optional
     #git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Developed an artificial intelligence agent using python that can play against a random agent in Colosseum Survival Game. The agent should maximize its own final score. Users will be able to see agents moves on an NxN game board. The Monte Carlo Tree Search method is used to decide the best next move.
+    description: Developed an artificial intelligence agent using Python that can play against a random agent in Colosseum Survival Game. The agent should maximize its own final score. Users will be able to see agents moves on an NxN game board. The Monte Carlo Tree Search method is used to decide the best next move.
 
   #- name: "Machine Learning"
   #  git_url:
@@ -91,11 +89,11 @@ professional_experience:
     company: "Jarvis"
     duration: "2022-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "As a software developer, I was responsible for building multiple projects (see Jarvis projects above). I gained more expertise in scripting, Java, Object Oriented Programming, and SQL by using multiple technologies, including Linux, Docker, PostgreSQL, Bash, Git, Crontab, etc. I worked in an agile environment, both participating in and leading daily scrum meetings. Also, I used Github to organize and manage project structures and to ensure the delivery of stable and clean code."
+    description: "As a software developer, I was responsible for building multiple projects (see Jarvis projects above). I gained more expertise in scripting, Python, Java, JavaScript, SQL, and Object Oriented Programming. I worked in an agile environment, both participating in and leading daily scrum meetings. Also, I used Github to organize and manage project structures and to ensure the delivery of stable and clean code."
   - title: "Software Development Engineer Intern"
     company: "Tower Research Capital"
     duration: "2021 Summer"
-    description: "I designed, coded, and debugged a daily analysis program that analyzed the previous trading day transaction data using Python. I produced supporting reports and documentation to help senior team members complete their projects. I collaborated with the trading team to ensure the analysis results were clean and functional."
+    description: "I designed, coded, and debugged a daily analysis program that analyzed the previous trading day transactions data using Python. I produced supporting reports and documentation to help senior team members complete their projects. I collaborated with the trading team to ensure the analysis results were clean and functional."
   - title: "Trading Analyst Intern"
     company: "United Overseas Bank"
     duration: "2019 Summer"
