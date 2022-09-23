@@ -1,0 +1,21 @@
+class Solution {
+    public boolean rotateString(String s, String goal) {
+        if(s.length() != goal.length()){
+            return false;
+        }
+        for (int i = 0; i < s.length(); i++){
+            s = s.charAt(s.length()-1)+s.substring(0,s.length()-1);
+            if (s.contains(goal)){
+                return true;
+            }
+        }
+        
+        return false;
+    }
+}
+
+class Solution {
+    public boolean rotateString(String A, String B) {
+        return A.length() == B.length() && (A + A).contains(B);
+    }
+}
