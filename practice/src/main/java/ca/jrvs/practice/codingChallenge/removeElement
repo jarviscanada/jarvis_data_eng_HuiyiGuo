@@ -1,0 +1,18 @@
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        if (nums == null){
+            throw new IllegalArgumentException("Input array is null");
+        }
+        if (nums.length == 0){
+            return 0;
+        }
+        
+        int po = -1;
+        for (int n: nums){
+            if (n != val){
+                nums[++po] = n;
+            }
+        }
+        return po+1;
+    }
+}
