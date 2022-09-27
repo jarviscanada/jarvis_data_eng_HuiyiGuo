@@ -48,5 +48,21 @@ VALUES
   (9, 'Spa', 20, 30, 100000, 800);
   
 b) Insert calculated data into a table
+INSERT INTO cd.facilities (
+  facid, name, membercost, guestcost, initialoutlay, monthlymaintenance) 
+SELECT 
+  (
+    SELECT 
+      max(facid) 
+    from 
+      cd.facilities)+ 1, 
+  'Spa', 
+  20, 
+  30, 
+  100000, 
+  800;
+  
+c) Update some existing data
+
 
 
