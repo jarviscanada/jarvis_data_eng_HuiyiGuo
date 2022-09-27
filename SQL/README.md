@@ -257,9 +257,69 @@ ORDER BY
   SUM(slots);
 
 d) List the total slots booked per facility per month
+SELECT 
+  facid, 
+  EXTRACT(
+    MONTH 
+    FROM 
+      starttime
+  ) AS month, 
+  SUM(slots) AS "Total Slots" 
+From 
+  cd.bookings 
+WHERE 
+  EXTRACT(
+    YEAR 
+    FROM 
+      starttime
+  ) = 2012 
+GROUP BY 
+  facid, 
+  month 
+ORDER BY 
+  facid, 
+  month;
 
 e) Find the count of members who have made at least one booking
+SELECT COUNT (DISTINCT memid) FROM cd.bookings;
 
+f) List each member's first booking after September 1st 2012
+SELECT 
+  surname, 
+  firstname, 
+  cd.members.memid, 
+  MIN(cd.bookings.starttime) 
+FROM 
+  cd.members 
+  JOIN cd.bookings ON cd.bookings.memid = cd.members.memid 
+WHERE 
+  starttime > '2012-09-01' 
+GROUP BY 
+  cd.members.memid 
+ORDER BY 
+  cd.members.memid;
+
+g) Produce a list of member names, with each row containing the total member count
+SELECT 
+  Count(*) over(), 
+  firstname, 
+  surname 
+FROM 
+  cd.members 
+ORDER BY 
+  joindate;
+
+h) Produce a numbered list of members
+SELECT 
+  ROW_NUMBER() OVER(), 
+  firstname, 
+  surname 
+FROM 
+  cd.members 
+ORDER BY 
+  joindate;
+
+i) Output the facility id that has the highest number of slots booked, again
 
 
 ###### Questions 6: String
