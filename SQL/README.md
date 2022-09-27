@@ -40,4 +40,13 @@ CREATE TABLE cd.facilities(
 
 ###### Questions 2: Modifying Data
 a) Insert some data into a table
+INSERT INTO cd.facilities (
+  facid, name, membercost, guestcost, 
+  initialoutlay, monthlymaintenance
+) 
+VALUES 
+  (9, 'Spa', 20, 30, 100000, 800);
+  
+b) Insert calculated data into a table
+
 
