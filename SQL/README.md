@@ -221,4 +221,23 @@ ORDER BY
 
 
 ###### Questions 6: String
-a) 
+a) Format the names of members
+SELECT CONCAT(surname, ', ', firstname) AS name FROM cd.members; || SELECT surname || ', ' || firstname AS name FROM cd.members;
+
+b) Perform a case-insensitive search
+SELECT * FROM cd.facilities WHERE UPPER(name) LIKE UPPER('TENNIS%');
+
+c) Find telephone numbers with parentheses
+SELECT memid, telephone FROM cd.members WHERE telephone ~ '[()]'; 
+
+d) Count the number of members whose surname starts with each letter of the alphabet
+SELECT 
+  SUBSTR(surname, 1, 1) AS letter, 
+  COUNT(*) AS count 
+FROM 
+  cd.members 
+GROUP BY 
+  letter 
+ORDER BY 
+  letter;
+
