@@ -320,6 +320,25 @@ ORDER BY
   joindate;
 
 i) Output the facility id that has the highest number of slots booked, again
+SELECT 
+  facid, 
+  total 
+FROM 
+  (
+    SELECT 
+      facid, 
+      SUM(slots) AS total, 
+      RANK() OVER (
+        ORDER BY 
+          SUM(slots) desc
+      ) rank 
+    FROM 
+      cd.bookings 
+    GROUP BY 
+      facid
+  ) AS RANK 
+WHERE 
+  rank = 1;
 
 
 ###### Questions 6: String
