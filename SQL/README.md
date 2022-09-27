@@ -218,6 +218,48 @@ ORDER BY
   member;
 
 ###### Questions 5: Aggregation
+a) Count the number of recommendations each member makes
+SELECT 
+  recommendedby, 
+  COUNT(*) 
+FROM 
+  cd.members 
+WHERE 
+  recommendedby IS NOT NULL 
+GROUP BY 
+  recommendedby 
+ORDER BY 
+  recommendedby;
+
+b) List the total slots booked per facility
+SELECT 
+  facid, 
+  SUM(slots) AS "Total Slots" 
+FROM 
+  cd.bookings 
+GROUP BY 
+  facid 
+ORDER by 
+  facid;
+
+c) List the total slots booked per facility in a given month
+SELECT 
+  facid, 
+  SUM(slots) AS "Total Slots" 
+FROM 
+  cd.bookings 
+WHERE 
+  starttime > '2012-09-01' 
+  AND starttime < '2012-10-31' 
+GROUP BY 
+  facid 
+ORDER BY 
+  SUM(slots);
+
+d) List the total slots booked per facility per month
+
+e) Find the count of members who have made at least one booking
+
 
 
 ###### Questions 6: String
