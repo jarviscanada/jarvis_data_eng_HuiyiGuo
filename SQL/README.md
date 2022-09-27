@@ -135,10 +135,90 @@ SELECT name FROM cd.facilities;
 
 
 ###### Questions 4: Join
-a) 
+a) Retrieve the start times of members' bookings
+SELECT 
+  starttime 
+FROM 
+  cd.bookings 
+  INNER JOIN cd.members ON cd.bookings.memid = cd.members.memid 
+WHERE 
+  cd.members.surname = 'Farrell' 
+  AND cd.members.firstname = 'David';
+  
+b) Work out the start times of bookings for tennis courts
+SELECT 
+  cd.bookings.starttime AS start, 
+  cd.facilities.name AS name 
+FROM 
+  cd.bookings 
+  INNER JOIN cd.facilities ON cd.bookings.facid = cd.facilities.facid 
+WHERE 
+  cd.facilities.name in (
+    'Tennis Court 2', 'Tennis Court 1'
+  ) 
+  AND cd.bookings.starttime > '2012-09-21' 
+  AND cd.bookings.starttime < '2012-09-22' 
+ORDER BY 
+  cd.bookings.starttime;
+  
+c) Produce a list of all members who have recommended another member
+SELECT 
+  DISTINCT memb.firstname, 
+  memb.surname 
+FROM 
+  cd.members memb 
+  INNER JOIN cd.members memb2 ON memb.memid = memb2.recommendedby 
+ORDER BY 
+  surname, 
+  firstname;
 
-b)
+d) Produce a list of all members, along with their recommender
+SELECT 
+  mem.firstname AS memfname, 
+  mem.surname AS memsname, 
+  recf.firstname AS recfname, 
+  recf.surname AS recsname 
+FROM 
+  cd.members mem 
+  LEFT OUTER JOIN cd.members recf ON recf.memid = mem.recommendedby 
+ORDER BY 
+  memsname, 
+  memfname;
 
-c)
+e) Produce a list of all members who have used a tennis court
+SELECT 
+  DISTINCT CONCAT(firstname, ' ', surname) AS member, 
+  fac.name AS facility 
+FROM 
+  cd.members mem 
+  INNER JOIN cd.bookings bookings ON mem.memid = bookings.memid 
+  INNER JOIN cd.facilities fac ON bookings.facid = fac.facid 
+WHERE 
+  fac.name IN (
+    'Tennis Court 1', 'Tennis Court 2'
+  ) 
+ORDER BY 
+  member, 
+  facility;
+
+f) Produce a list of all members, along with their recommender, using no joins
+SELECT 
+  DISTINCT CONCAT(firstname, ' ', surname) AS member, 
+  (
+    SELECT 
+      CONCAT(firstname, ' ', surname) AS recommender 
+    FROM 
+      cd.members rec 
+    WHERE 
+      rec.memid = mem.recommendedby
+  ) 
+FROM 
+  cd.members mem 
+ORDER BY 
+  member;
 
 ###### Questions 5: Aggregation
+
+
+###### Questions 6: String
+a) 
