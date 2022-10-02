@@ -1,0 +1,14 @@
+class Solution {
+    public int duplicateChar(String s) {
+      char string[] = s.toCharArray();
+      List<Character> chars = new ArrayList<Character>();
+      Map<Character, Integer> map = new HashMap<>();
+      for(char c : string) {
+          if(map.containsKey(c)) {
+            chars.add(c);
+          } else {
+            map.put(c, 1);
+          }
+      }
+      return chars;
+    }
