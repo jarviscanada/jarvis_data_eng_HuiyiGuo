@@ -63,10 +63,10 @@
   ],
   "skills": {
     "competent": [
-      "C",
+      "Docker",
       "R",
       "MATLAB",
-      "Docker",
+      "C",
       "Applied Machine Learning",
       "Natural Language Processing",
       "Microsoft 365"
@@ -80,9 +80,11 @@
     ],
     "proficient": [
       "Java",
+      "Angular",
+      "Node/Express",
       "JavaScript",
-      "Python",
       "RDBMS/SQL",
+      "Python",
       "Agile/Scrum",
       "Git",
       "Linux/Bash"
