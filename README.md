@@ -4,9 +4,9 @@ I am a recent graduate of McGill University with a Bachelor's degree in Statisti
 
 ## Skills
 
-**Proficient:** Java, JavaScript, Python, RDBMS/SQL, Agile/Scrum, Git, Linux/Bash
+**Proficient:** Java, Angular, Node/Express, JavaScript, RDBMS/SQL, Python, Agile/Scrum, Git, Linux/Bash
 
-**Competent:** C, R, MATLAB, Docker, Applied Machine Learning, Natural Language Processing, Microsoft 365
+**Competent:** Docker, R, MATLAB, C, Applied Machine Learning, Natural Language Processing, Microsoft 365
 
 **Familiar:** Public Cloud(GCP), JUnit, MIPS assembly, Ocaml, Spring framework/Spring boot
 
