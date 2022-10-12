@@ -1,0 +1,127 @@
+# Preferred name (Characters only)
+name: "Huiyi Guo"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: I am a recent graduate of McGill University with a Bachelor's degree in Statistics and Computer Science. Through my previous internship experiences and the education I gained from university, I gained solid coding skills with Python, Java, JavaScript, SQL, and C as well as problem solving and collaboration skills that I can carry to future roles. During my studies, backend and full-stack development captured my heart as I can turn my creative ideas into applications that solve real-world problems. I enjoy learning new techniques and continuously improving them. I'm now sharpening my abilities with tools and technologies that are commonly used in the business and implementing my skills at Jarvis Consulting Group.
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - JavaScript
+    - Python
+    - RDBMS/SQL
+    - Agile/Scrum
+    - Git
+    - Linux/Bash
+  # At least 5 skills
+  competent:
+    - C
+    - R
+    - MATLAB
+    - Docker
+    - Applied Machine Learning
+    - Natural Language Processing
+    - Microsoft 365
+  # At least 5 skills
+  familiar:
+    - Public Cloud(GCP)
+    - JUnit
+    - MIPS assembly
+    - Ocaml
+    - Spring framework/Spring boot
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "//github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: This project is about developing a Linux Cluster Monitoring Agent that provides metrics about system activities. Bash scripts are used to collect data from the host system every minute using cron and saved to PostgresSQL server that runs inside a docker container. 
+
+  - name: "Core Java Apps"
+    git_url: "https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/core_java"
+    description:
+  #    - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "JDBC App: This project implemented a Java Database Connectivity (JDBC) application using the JDBC API to connect to a database and run queries to obtain the data. The user can use the application to perform predefined actions on the database, such as CRUD operations. Java, JDBC, Maven, Postgres, and Docker were all used when building this application."
+      - "Grep App: This application is a Java-based application that mimics the Linux command line grep function. This application searches files recursively in a given directory and outputs the matched text pattern using regex to a file. The project was completed using Maven Standard Directory Layout following industry standards. Additionally, Lambda API and Stream API are used for managing larger inputs. The grep application was then dockerized and uploaded to DockerHub as a Docker Image."
+  #- name: "Springboot App"
+  #  git_url: "/springboot"
+  #  description: ""
+  #- name: "Python Data Analytics"
+  #  git_url: "/python_data_anlytics"
+  #  description: ""
+  #- name: "Hadoop"
+  #  git_url: "/hadoop"
+  #  description: ""
+  #- name: "Spark"
+  #  git_url: "/spark"
+  #  description: ""
+  #- name: "Cloud/DevOps"
+  #  git_url: "/cloud_devops"
+  #  description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "AI agent in game"
+    #URL is optional
+    #git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed an artificial intelligence agent using Python that can play against a random agent in Colosseum Survival Game. The agent should maximize its own final score. Users will be able to see agents moves on an NxN game board. The Monte Carlo Tree Search method is used to decide the best next move.
+
+  #- name: "Machine Learning"
+  #  git_url:
+  #  description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2022-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "As a software developer, I was responsible for building multiple projects (see Jarvis projects above). I gained more expertise in scripting, Python, Java, JavaScript, SQL, and Object Oriented Programming. I worked in an agile environment, both participating in and leading daily scrum meetings. Also, I used Github to organize and manage project structures and to ensure the delivery of stable and clean code."
+  - title: "Software Development Engineer Intern"
+    company: "Tower Research Capital"
+    duration: "2021 Summer"
+    description: "I designed, coded, and debugged a daily analysis program that analyzed the previous trading day transactions data using Python. I produced supporting reports and documentation to help senior team members complete their projects. I collaborated with the trading team to ensure the analysis results were clean and functional."
+  - title: "Trading Analyst Intern"
+    company: "United Overseas Bank"
+    duration: "2019 Summer"
+    description: "I was responsible for analyzing data from various sources and compiling it into daily routine reports. I produced relevant presentations for other teams. I often received positive feedback from my supervisors and team members regarding my presentation quality and practical information."
+
+#List of edcuation
+education: 
+  - school_name: "McGill University"
+    duration: "2018-2022"
+    degree: "Bachelor of Sciences"
+    department: "Statistics and Computer Science"
+    # optional
+    awards_achievements:  
+
+#Optional section
+others:
+    #category
+    - title: "Activities/Hobbies"
+    #      #list of items
+      bullets:
+        - "Reading"
+        - "Casual Gamer"
+        - "Badminton Player"    
+#                  - title: "Awards"
+    #                      bullets:
+    #                            - "Winner"
+    #                              - title: "Activities/Hobbies"
+    #                                  bullets:
+    #                                        - "Basketball player"
+    #                                              - "Competitive gaming"
+    #                                                    - "Volunteer, ABC Food bank: Ut enim ad minim veniam""
