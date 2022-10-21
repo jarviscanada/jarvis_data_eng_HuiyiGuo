@@ -28,6 +28,11 @@
       ],
       "git_url": "https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/core_java",
       "name": "Core Java Apps"
+    },
+    {
+      "description": "This is a simple full-stack Twitter application with CRUD functionality that enables posting, editing and deleting tweets as well as viewing tweet details. The back-end server uses Node.js + Express for REST APIs, the front-end side is an Angular App with HTTPClient and PostgresSQL is used for the Database.",
+      "git_url": "",
+      "name": "Angular-Express-SQL-Twitter"
     }
   ],
   "name": "Huiyi Guo",
