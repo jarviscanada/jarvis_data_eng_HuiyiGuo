@@ -19,6 +19,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo](
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/masterhttps://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/core_java)]:
       
+  - Twitter App: This is a Twitter CRUD application that uses Java DAO to communicate with Twitter's REST API to post, display, and remove tweets. The business logic was handled in the service layer. JUnit 4 and Mockito were used to test integration tests and unit tests of this project. The application was dockerized as a Docker image via Dockerhub for easy distribution and execution.
   - JDBC App: This project implemented a Java Database Connectivity (JDBC) application using the JDBC API to connect to a database and run queries to obtain the data. The user can use the application to perform predefined actions on the database, such as CRUD operations. Java, JDBC, Maven, Postgres, and Docker were all used when building this application.
   - Grep App: This application is a Java-based application that mimics the Linux command line grep function. This application searches files recursively in a given directory and outputs the matched text pattern using regex to a file. The project was completed using Maven Standard Directory Layout following industry standards. Additionally, Lambda API and Stream API are used for managing larger inputs. The grep application was then dockerized and uploaded to DockerHub as a Docker Image.
 
