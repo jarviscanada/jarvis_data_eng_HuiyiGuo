@@ -76,18 +76,37 @@ FROM wdi_opencsv_text_partitions
 WHERE indicatorname LIKE'%GDP growth' AND year=2015 AND countryname='Canada';
 ```
 
-####
+#### Columnar File Optimization
 ```
+DROP TABLE IF EXISTS wdi_csv_parquet;
+CREATE EXTERNAL TABLE wdi_csv_parquet
+(year INTEGER, countryName STRING, countryCode STRING, indicatorName STRING, indicatorCode STRING, indicatorValue FLOAT)
+STORED AS PARQUET
+LOCATION 'hdfs://user/sherry/hive/wdi/wdi_csv_parquet';
+
+INSERT OVERWRITE TABLE wdi_csv_parquet
+SELECT * FROM wdi_opencsv_text;
 ```
 
-####
+#### Compare
 ```
-```
-
-####
-```
+SELECT count(countryName) FROM wdi_csv_parquet;
+SELECT count(countryName) FROM wdi_opencsv_text;
 ```
 
-####
+#### Highest GDP Growth
 ```
+SELECT tb1.indicatorvalue AS gdp_growth_value, tb1.year, tb1.countryname
+FROM wdi_csv_parquet tb1,
+(SELECT countryname, max(indicatorvalue) AS max_gdp
+FROM wdi_csv_parquet   WHERE indicatorname LIKE '%GDP growth%' GROUP BY countryname) tb2
+WHERE tb1.countryname = tb2.countryname AND gdp_growth_value = tb2.max_gdp AND tb1.indicatorvalue != 0;
+```
+
+#### Sort GDP by country and year
+```
+SELECT countryname, year, indicatorcode, indicatorvalue
+FROM wdi_csv_parquet
+WHERE indicatorcode = 'NY.GDP.MKTP.KD.ZG'
+SORT BY countryname, year;
 ```
