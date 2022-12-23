@@ -6,3 +6,26 @@ CREATE EXTERNAL TABLE wdi_csv_text
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'
 LOCATION 'hdfs:///user/sherry/hive/wdi/wdi_csv_text';
 ```
+
+#### INSERT query that loads data from wdi_gs table to wdi_csv_text table
+```
+INSERT OVERWRITE TABLE wdi_csv_text
+SELECT * FROM wdi_gs
+```
+
+#### 
+```
+```
+
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
