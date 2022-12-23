@@ -13,11 +13,12 @@ INSERT OVERWRITE TABLE wdi_csv_text
 SELECT * FROM wdi_gs
 ```
 
+#### Check HDFS file size for wdi_csv_text file 
+```
+hdfs fs -du -s -h /user/sherry/hive/wdi/wdi_csv_text
+```
+
 #### 
-```
-```
-
-
 ```
 ```
 
