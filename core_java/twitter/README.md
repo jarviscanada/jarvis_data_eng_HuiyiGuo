@@ -7,7 +7,7 @@ The Twitter CRD application provides a method for a CLI to CRD (Create, Read, an
 ## UML diagram
 
 ## Models
-![ERD](./assets/asset2.JPG)
+![UML](./assets/asset2.JPG)
 
 ## Spring
 
