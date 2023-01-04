@@ -8,6 +8,7 @@ The Twitter CRD application provides a method for a CLI to CRD (Create, Read, an
 ![UML](assets/asset.png)
 
 ## Models
+The Tweet model for this project has been created to accurately represent the Tweet JSON object that Twitter's REST APIs would deliver. The Tweet model and its dependencies are depicted in the diagram below.
 ![UML](assets/asset2.JPG)
 
 ## Spring
@@ -17,6 +18,9 @@ The Twitter CRD application provides a method for a CLI to CRD (Create, Read, an
 
 
 # Deployment
-
+The application was deployed as a Docker image on DockerHub to facilitate distribution. The image can be pulled using the docker command `docker pull` on the CLI.
 
 # Improvements
+* Allowing the user to also search for Tweets by keywords and then display it.
+* Adding a scheduling tool and schedule Twitter posts in advance.
+* Automatically ownloading tweets for further analysis.
