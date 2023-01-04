@@ -31,6 +31,7 @@ The service component is responsible for the business logic and ensures that the
 The TwitterDao involves calling the twitter rest API v1.1 and mapping the response to the models/dto defined in the application where we use Jackson to map objects from HttpResponse to Data models. The TwitterHelper is used to return the HttpResponse required for TwitterDao object.
 
 ## Spring
+By using the principal of inversion of control and the dependency injection design pattern, the dependencies of this application were controlled. The given class was annotated with spring annotations such as @Component, @Controller, @Service, and @Repository to indicate that it is a Bean and conforms to its stereotype. Before each constructor, the @Autowire annotation was used to tell Spring that it needs to inject the dependencies.
 
 
 # Test
