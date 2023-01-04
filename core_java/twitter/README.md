@@ -2,6 +2,9 @@
 The Twitter CRD application provides a method for a CLI to CRD (Create, Read, and Delete) tweets through Twitter's REST APIs. Maven and Springboot were used to organize this Java-based application. Unit and integration testing were done using JUnit and Mockito. The application was then deployed using Docker.
 
 # Quick Start
+In order to running this application through Docker, the environment variables `consumerKey`, `consumerSecret`, `accessToken` and `tokenSecret` from the Twitter Developer account is needed.
+After the environment variables has been set, `post`, `show` and `delete` a tweet actions can be performed using
+`docker run --rm -e consumerKey -e consumerSecret -e accessToken -e tokenSecret <username>/twitter show|post|delete [options]`
 
 # Design
 ## UML diagram
