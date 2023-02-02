@@ -27,6 +27,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo](
 
 **Hadoop**[[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/hadoop)]: Applied Hadoop, Hive, and a Zeppelin Notebook to solve business issues on a data set. Created a Hadoop cluster with a single master node and two worker nodes using Dataproc. The data was loaded into HDFS and used Apache Hive to analyse it. The HQL queries used to solve the business challenges were stored in the Zeppelin Notebook. In the end, the notebook provided solutions for all business issues. Each notebook cell was put through a series of trial-and-error tests during the testing process. The master and worker nodes were provisioned on Google Cloud Platform for the project's deployment.
 
+**Spark**[[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/spark)]: Used Spark clusters to solve business issues on two datasets of data. A master node and two worker nodes were utilised in clusters. One dataset was kept in Google Cloud Storage, and the other was kept in Azure Databricks Storage. Google Cloud Platform and Azure Databricks were utilised in the project's deployment to provision the clusters.
+
 ## Highlighted Projects
 **AI agent in game**: Developed an artificial intelligence agent using Python that can play against a random agent in Colosseum Survival Game. The agent should maximize its own final score. Users will be able to see agents moves on an NxN game board. The Monte Carlo Tree Search method is used to decide the best next move.
 
