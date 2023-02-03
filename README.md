@@ -1,10 +1,10 @@
-# Huiyi Guo . Jarvis Consulting
+# Huiyi(Sherry) Guo . Jarvis Consulting
 
 I am a recent graduate of McGill University with a Bachelor's degree in Statistics and Computer Science. Through my previous internship experiences and the education I gained from university, I gained solid coding skills with Python, Java, JavaScript, SQL, and C as well as problem solving and collaboration skills that I can carry to future roles. During my studies, backend and full-stack development captured my heart as I can turn my creative ideas into applications that solve real-world problems. I enjoy learning new techniques and continuously improving them. I'm now sharpening my abilities with tools and technologies that are commonly used in the business and implementing my skills at Jarvis Consulting Group.
 
 ## Skills
 
-**Proficient:** Java, Angular, Node/Express, JavaScript, RDBMS/SQL, Python, Agile/Scrum, Git, Linux/Bash
+**Proficient:** Java, RDBMS/SQL, Angular, Node/Express, JavaScript, Python, Agile/Scrum, Git, Linux/Bash
 
 **Competent:** Docker, R, MATLAB, C, Applied Machine Learning, Natural Language Processing, Microsoft 365
 
