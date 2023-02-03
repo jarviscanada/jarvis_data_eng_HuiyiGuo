@@ -1,6 +1,6 @@
 # Huiyi(Sherry) Guo . Jarvis Consulting
 
-I am a recent graduate of McGill University with a Bachelor's degree in Statistics and Computer Science. Through my previous internship experiences and the education I gained from university, I gained solid coding skills with Python, Java, JavaScript, SQL, and C as well as problem solving and collaboration skills that I can carry to future roles. During my studies, backend and full-stack development captured my heart as I can turn my creative ideas into applications that solve real-world problems. I enjoy learning new techniques and continuously improving them. I'm now sharpening my abilities with tools and technologies that are commonly used in the business and implementing my skills at Jarvis Consulting Group.
+I am a recent graduate of McGill University with a Bachelor's degree in Statistics and Computer Science. Through my previous internship experiences and the education I gained from university, I gained solid coding skills with Python, Java, JavaScript, SQL, and C as well as problem solving and collaboration skills that I can carry to future roles. During my studies, data engineering role and backend development captured my heart as I can turn my creative ideas into applications that solve real-world problems. I enjoy learning new techniques and continuously improving them. I'm now sharpening my abilities with tools and technologies that are commonly used in the business and implementing my skills at Jarvis Consulting Group.
 
 ## Skills
 
@@ -23,14 +23,16 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo](
   - JDBC App: This project implemented a Java Database Connectivity (JDBC) application using the JDBC API to connect to a database and run queries to obtain the data. The user can use the application to perform predefined actions on the database, such as CRUD operations. Java, JDBC, Maven, Postgres, and Docker were all used when building this application.
   - Grep App: This application is a Java-based application that mimics the Linux command line grep function. This application searches files recursively in a given directory and outputs the matched text pattern using regex to a file. The project was completed using Maven Standard Directory Layout following industry standards. Additionally, Lambda API and Stream API are used for managing larger inputs. The grep application was then dockerized and uploaded to DockerHub as a Docker Image.
 
-**Angular-Express-SQL-Twitter** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master)]: This is a simple full-stack Twitter application with CRUD functionality that enables posting, editing and deleting tweets as well as viewing tweet details. The back-end server uses Node.js + Express for REST APIs, the front-end side is an Angular App with HTTPClient and PostgresSQL is used for the Database.
+**Angular-Express-SQL-Twitter** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master)]: This is a refactoring version of the Twitter Core java App. It is a simple full-stack Twitter application with CRUD functionality that enables posting, editing and deleting tweets as well as viewing tweet details. The back-end server uses Node.js + Express for REST APIs, the front-end side is an Angular App with HTTPClient and PostgresSQL is used for the Database.
 
 **Hadoop**[[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/hadoop)]: Applied Hadoop, Hive, and a Zeppelin Notebook to solve business issues on a data set. Created a Hadoop cluster with a single master node and two worker nodes using Dataproc. The data was loaded into HDFS and used Apache Hive to analyze it. The HQL queries used to solve the business challenges were stored in the Zeppelin Notebook. In the end, the notebook provided solutions for all business issues. Each notebook cell was put through a series of trial-and-error tests during the testing process. The master and worker nodes were provisioned on Google Cloud Platform for the project's deployment.
 
-**Spark**[[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/spark)]: Used Spark clusters to solve business issues on two datasets of data. A master node and two worker nodes were utilized in clusters. One dataset was kept in Google Cloud Storage, and the other was kept in Azure Databricks Storage. Google Cloud Platform and Azure Databricks were utilized in the project's deployment to provision the clusters.
+**Spark**[[GitHub](https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo/tree/master/spark)]: Used Spark clusters to solve business issues on two datasets of data. The project was written in Python. A master node and two worker nodes were utilized in clusters. One dataset was kept in Google Cloud Storage, and the other was kept in Azure Databricks Storage. Google Cloud Platform and Azure Databricks were utilized in the project's deployment to provision the clusters.
 
 ## Highlighted Projects
 **AI agent in game**: Developed an artificial intelligence agent using Python that can play against a random agent in Colosseum Survival Game. The agent should maximize its own final score. Users will be able to see agents moves on an NxN game board. The Monte Carlo Tree Search method is used to decide the best next move.
+
+**Reproduction and Research on AlexNet**: Reproduced the AlexNet method created by Alex K. on image classification problems using python. Test this method on a CIFAR10 dataset using 25 epoch. Analyzed the number of layers, activation function, hyperparameters, maxpooling and kernel sizes in the model. Documented a report, methodology used in the project, and results of the data.
 
 
 ## Professional Experiences
@@ -47,6 +49,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_HuiyiGuo](
 
 
 ## Miscellaneous
-- Reading
-- Casual Gamer
-- Badminton Player
+- Read news from technology-focused publications to keep up with technical development
+- Casual Gamer, love strategy games that transform an existing, linear process into a more valuable and growing process like Oxygen Not Included
+- Badminton Player, love to communicate with my partner, motivate each other, and face the challenge
