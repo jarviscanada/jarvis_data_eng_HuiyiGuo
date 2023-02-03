@@ -13,6 +13,10 @@
     {
       "description": "Developed an artificial intelligence agent using Python that can play against a random agent in Colosseum Survival Game. The agent should maximize its own final score. Users will be able to see agents moves on an NxN game board. The Monte Carlo Tree Search method is used to decide the best next move.",
       "name": "AI agent in game"
+    },
+    {
+      "description": "Reproduced the AlexNet method created by Alex K. on image classification problems using python. Test this method on a CIFAR10 dataset using 25 epoch. Analyzed the number of layers, activation function, hyperparameters, maxpooling and kernel sizes in the model. Documented a report, methodology used in the project, and results of the data.",
+      "name": "Reproduction and Research on AlexNet"
     }
   ],
   "jarvis_projects": [
@@ -31,7 +35,7 @@
       "name": "Core Java Apps"
     },
     {
-      "description": "This is a simple full-stack Twitter application with CRUD functionality that enables posting, editing and deleting tweets as well as viewing tweet details. The back-end server uses Node.js + Express for REST APIs, the front-end side is an Angular App with HTTPClient and PostgresSQL is used for the Database.",
+      "description": "This is a refactoring version of the Twitter Core java App. It is a simple full-stack Twitter application with CRUD functionality that enables posting, editing and deleting tweets as well as viewing tweet details. The back-end server uses Node.js + Express for REST APIs, the front-end side is an Angular App with HTTPClient and PostgresSQL is used for the Database.",
       "git_url": "",
       "name": "Angular-Express-SQL-Twitter"
     },
@@ -51,9 +55,9 @@
   "others": [
     {
       "bullets": [
-        "Reading",
-        "Casual Gamer",
-        "Badminton Player"
+        "Read news from technology-focused publications to keep up with technical development",
+        "Casual Gamer, love strategy games that transform an existing, linear process into a more valuable and growing process like Oxygen Not Included",
+        "Badminton Player, love to communicate with my partner, motivate each other, and face the challenge"
       ],
       "title": "Activities/Hobbies"
     }
@@ -80,32 +84,33 @@
   ],
   "skills": {
     "competent": [
+      "Hadoop",
+      "Spark",
       "Docker",
       "R",
       "MATLAB",
       "C",
       "Applied Machine Learning",
       "Natural Language Processing",
-      "Microsoft 365"
     ],
     "familiar": [
       "Public Cloud(GCP)",
       "JUnit",
       "MIPS assembly",
       "Ocaml",
-      "Spring framework/Spring boot"
+      "Spring"
     ],
     "proficient": [
-      "Java",
-      "Angular",
-      "Node/Express",
-      "JavaScript",
-      "RDBMS/SQL",
       "Python",
+      "RDBMS/SQL",
+      "Java",
+      "JavaScript",
+      "Node/Express",
+      "Angular",
       "Agile/Scrum",
       "Git",
       "Linux/Bash"
     ]
   },
-  "summary": "I am a recent graduate of McGill University with a Bachelor's degree in Statistics and Computer Science. Through my previous internship experiences and the education I gained from university, I gained solid coding skills with Python, Java, JavaScript, SQL, and C as well as problem solving and collaboration skills that I can carry to future roles. During my studies, backend and full-stack development captured my heart as I can turn my creative ideas into applications that solve real-world problems. I enjoy learning new techniques and continuously improving them. I'm now sharpening my abilities with tools and technologies that are commonly used in the business and implementing my skills at Jarvis Consulting Group."
+  "summary": "I am a recent graduate of McGill University with a Bachelor's degree in Statistics and Computer Science. Through my previous internship experiences and the education I gained from university, I gained solid coding skills with Python, Java, JavaScript, SQL, and C as well as problem solving and collaboration skills that I can carry to future roles. During my studies, data engineering role and backend development captured my heart as I can turn my creative ideas into applications that solve real-world problems. I enjoy learning new techniques and continuously improving them. I'm now sharpening my abilities with tools and technologies that are commonly used in the business and implementing my skills at Jarvis Consulting Group."
 }
